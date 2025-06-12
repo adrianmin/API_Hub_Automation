@@ -26,6 +26,6 @@ jobs:
           npm install swaggerhub-cli -g
       - name: Check the API definition exists
         env:
-          SWAGGERHUB_API_KEY: ${{secrets.SWAGGERHUB_API_KEY}}
+          SWAGGERHUB_API_KEY: 817a0f58-83a7-4a8e-a7bf-60ae3d324417
         run: |
           swaggerhub api:create API_Design_AM/BankingAPI --file ./BankingAPI.json
