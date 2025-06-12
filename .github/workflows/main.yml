@@ -28,4 +28,4 @@ jobs:
         env:
           SWAGGERHUB_API_KEY: ${{secrets.SWAGGERHUB_API_KEY}}
         run: |
-          swaggerhub api:create API_Design_AM/BankingAPI/3.0.0 --file ./BankingAPI.json
+          swaggerhub api:create API_Design_AM/BankingAPI --file ./BankingAPI.json
