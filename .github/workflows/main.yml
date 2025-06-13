@@ -46,7 +46,7 @@ jobs:
         env:
           SWAGGERHUB_API_KEY: ${{secrets.SWAGGERHUB_API_KEY}}
         run: |
-          swaggerhub api:get API_Design_AM/BankingAPI/3.0.0
+          swaggerhub api:get Adrians_Org/BankingAPI/3.0.0
       - name: Validate definition
         env:
           SWAGGERHUB_API_KEY: ${{secrets.SWAGGERHUB_API_KEY}}
@@ -69,7 +69,7 @@ jobs:
         env:
           SWAGGERHUB_API_KEY: ${{secrets.SWAGGERHUB_API_KEY}}
         run: |
-          swaggerhub api:publish API_Design_AM/BankingAPI/3.0.0
+          swaggerhub api:publish Adrians_Org/BankingAPI/3.0.0
       - name: Make new version the default
         env:
           SWAGGERHUB_API_KEY: ${{secrets.SWAGGERHUB_API_KEY}}
