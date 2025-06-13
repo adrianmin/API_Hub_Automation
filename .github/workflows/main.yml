@@ -28,7 +28,7 @@ jobs:
         env:
           SWAGGERHUB_API_KEY: ${{secrets.SWAGGERHUB_API_KEY}}
         run: |
-          swaggerhub api:create Adrians_Org/BankingAPI --file ./BankingAPI.json
+          swaggerhub api:create Adrians_Org/BankingAPI/3.0.0 --file ./BankingAPI.json
 
   Validate-Design-on-Swaggerhub:
     needs: [Pull-API-Into-SwaggerHub]
